@@ -1,0 +1,237 @@
+/* 图片 */
+
+.head img {
+    width: 100px;
+    height: 100px;
+}
+
+
+/* 头 */
+
+.title {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+.title strong {
+    margin: 0 0 5px 10px;
+    font-size: .5em;
+}
+
+
+/* 基本信息 */
+
+.info {
+    display: grid;
+    /* 横向布局，直接给列 */
+    grid-template-columns: 20px 1fr 90px 1fr;
+    gap: 5px 20px;
+}
+
+.info .item {
+    font-size: 14px;
+}
+
+.info .item.pre {
+    text-align: end;
+    font-weight: normal;
+    color: rgba(0, 0, 0, .5);
+    font-size: 12px;
+}
+
+.info .item a {
+    color: #5ba5e9;
+}
+
+.info .item i {
+    font-style: normal;
+}
+
+
+/* 图片位置 */
+
+.head {
+    position: relative;
+}
+
+.head img {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-30%);
+    border-radius: 50%;
+}
+
+
+/* 容器 */
+
+.container {
+    position: relative;
+}
+
+.backend {
+    /* width: 85%; */
+    min-width: 800px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%) rotate(-3deg);
+    top: 40px;
+    background: linear-gradient(to right, #21d0ed, #0fa7e9);
+}
+
+.frontend {
+    width: 100%;
+    height: 100%;
+    padding: 50px 40px;
+    transform: rotate(3deg);
+    background: #fff;
+}
+
+.page {
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+}
+
+
+/* 教育经历 */
+
+h2 {
+    margin-top: 40px;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+
+/* add */
+
+.experience h3 {
+    border-left: 2px solid #0ea5e9;
+    position: relative;
+    padding: 20px 20px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.experience p {
+    border-left: 2px solid #0ea5e9;
+    position: relative;
+    padding: 0 20px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.gray {
+    color: #888888;
+}
+
+.experience h3::before {
+    content: '';
+    position: absolute;
+    padding: 7px;
+    background: #0ea5e9;
+    border-radius: 50%;
+    left: 0;
+    top: 50%;
+    transform: translate(-60%, -50%);
+}
+
+.work.experience h3 {
+    border-left: 2px solid #22d3ee;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.work.experience h3::before {
+    transform: translate(-60%, -10%);
+}
+
+.work.experience p {
+    padding-bottom: 0px;
+    border-left: 2px solid #22d3ee;
+}
+
+.work.experience p:last-of-type {
+    padding-bottom: 20px;
+}
+
+
+/* 专业技能 */
+
+.skill-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.skill-container .item {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 5px solid #0ea5e9;
+    transform: rotate(45deg);
+    line-height: 130px;
+    text-align: center;
+    color: #0ea5e9;
+}
+
+.skill-container .item:nth-child(3) {
+    border-color: #0ea5e9 #0ea5e9 #d5f7fd #d5f7fd;
+}
+
+.skill-container .item:nth-child(4) {
+    border-color: #0ea5e9 #d5f7fd #d5f7fd #d5f7fd;
+}
+
+.skill-container .item:nth-child(5) {
+    border-color: #0ea5e9 #0ea5e9 #0ea5e9 #d5f7fd;
+}
+
+.skill-container .item span {
+    display: block;
+    transform: rotate(-45deg);
+}
+
+
+/* 项目经验*/
+
+.project h3 {
+    margin: 20px 0;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: 60px 78%;
+    gap: 10px 30px;
+}
+
+.project-container .item p {
+    margin: 10px 0;
+    color: #333333;
+}
+
+.project-container .item a {
+    color: #5badef;
+}
+
+.project-container .item p:nth-child(1) {
+    margin-top: 0;
+}
+
+.project-container .item:nth-child(2n+1) {
+    color: #8888a7;
+    text-align: end;
+}
+
+
+/* 个人评价 */
+
+.personal-evaluation {
+    margin-top: 70px;
+    font-size: 16px;
+}
