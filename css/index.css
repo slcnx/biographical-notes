@@ -156,10 +156,32 @@ h2 {
     border-left: 2px solid #22d3ee;
 }
 
-.work.experience p:last-of-type {
+.work.experience p:last-of-type{
     padding-bottom: 20px;
 }
 
+
+.work-items {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 10px;
+    
+}
+
+/* 期望职位 */
+.position p span::after {
+    content: "|";
+    margin: 0 10px;
+    
+    font-size: 14px;
+    color: #999;
+    line-height: 20px;
+    margin-bottom: 4px;
+    margin-top: 16px;
+}
+.position p span:last-child::after {
+    content: "";
+}
 
 /* 专业技能 */
 
@@ -180,13 +202,13 @@ h2 {
     color: #0ea5e9;
 }
 
-.skill-container .item:nth-child(3) {
+/* .skill-container .item:nth-child(3) {
     border-color: #0ea5e9 #0ea5e9 #d5f7fd #d5f7fd;
 }
 
 .skill-container .item:nth-child(4) {
     border-color: #0ea5e9 #d5f7fd #d5f7fd #d5f7fd;
-}
+} */
 
 .skill-container .item:nth-child(5) {
     border-color: #0ea5e9 #0ea5e9 #0ea5e9 #d5f7fd;
