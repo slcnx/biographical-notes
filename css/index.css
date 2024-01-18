@@ -167,6 +167,9 @@ h2 {
     gap: 10px;
     
 }
+.work a {
+    color: #5ba5e9;
+}
 
 /* 期望职位 */
 .position p span::after {
